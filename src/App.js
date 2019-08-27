@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import Counter from "./components/Counter";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import kims from "./kims.json";
@@ -49,8 +48,6 @@ class App extends Component {
     render() {
         return (
             <Wrapper>
-
-                {/* <Title>Kimoji Game</Title> */}
                 <Title score={this.state.score} topscore={this.state.topscore}>Kimoji Game</Title>
                 {this.state.kims.map(kim => (
                     <KimCards
